@@ -1,0 +1,593 @@
+{
+    "model": "models/mobilenetv2_fp32.tflite",
+    "runs": 500,
+    "warmup_runs": 50,
+    "num_threads": 4,
+    "temp_sample_interval": 50,
+    "timestamp_utc": "2026-05-03T23:42:19.830788+00:00",
+    "input_shape": [
+        1,
+        224,
+        224,
+        3
+    ],
+    "input_dtype": "<class 'numpy.float32'>",
+    "output_shape": [
+        1,
+        1000
+    ],
+    "output_dtype": "float32",
+    "latency_ms": {
+        "mean": 8.818664894001813,
+        "median": 8.80958050015579,
+        "min": 8.778747000178555,
+        "max": 9.153640000022278,
+        "p90": 8.833757000047626,
+        "p95": 8.848541000133991,
+        "p99": 9.10643799988975
+    },
+    "throughput_fps": 113.39584982758213,
+    "thermal": {
+        "summary": {
+            "available": true,
+            "start_temperature_c": 46.468,
+            "end_temperature_c": 47.375,
+            "max_temperature_c": 47.468,
+            "delta_temperature_c": 0.9069999999999965
+        },
+        "trace": [
+            {
+                "phase": "before_model_load",
+                "run_index": null,
+                "timestamp_utc": "2026-05-03T23:42:19.833364+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 44.468
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.468
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.187
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.625
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 43.406
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 46.468
+                    }
+                ],
+                "max_temperature_c": 46.468
+            },
+            {
+                "phase": "before_warmup",
+                "run_index": null,
+                "timestamp_utc": "2026-05-03T23:42:19.862269+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 44.531
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.562
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.125
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.625
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 43.375
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 46.562
+                    }
+                ],
+                "max_temperature_c": 46.562
+            },
+            {
+                "phase": "after_warmup",
+                "run_index": null,
+                "timestamp_utc": "2026-05-03T23:42:20.320504+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 45.562
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.812
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.125
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.531
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 43.687
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 46.5
+                    }
+                ],
+                "max_temperature_c": 46.812
+            },
+            {
+                "phase": "measurement",
+                "run_index": 50,
+                "timestamp_utc": "2026-05-03T23:42:20.771589+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 45.625
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.781
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.093
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.625
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 43.781
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 46.781
+                    }
+                ],
+                "max_temperature_c": 46.781
+            },
+            {
+                "phase": "measurement",
+                "run_index": 100,
+                "timestamp_utc": "2026-05-03T23:42:21.222632+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 45.968
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.875
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.187
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.687
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 43.906
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.218
+                    }
+                ],
+                "max_temperature_c": 47.218
+            },
+            {
+                "phase": "measurement",
+                "run_index": 150,
+                "timestamp_utc": "2026-05-03T23:42:21.673452+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 45.875
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.875
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.187
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.718
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.0
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 46.875
+                    }
+                ],
+                "max_temperature_c": 46.875
+            },
+            {
+                "phase": "measurement",
+                "run_index": 200,
+                "timestamp_utc": "2026-05-03T23:42:22.124680+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 45.906
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 46.843
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.281
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.781
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.062
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.093
+                    }
+                ],
+                "max_temperature_c": 47.093
+            },
+            {
+                "phase": "measurement",
+                "run_index": 250,
+                "timestamp_utc": "2026-05-03T23:42:22.575351+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.093
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.125
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.406
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.875
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.093
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.125
+                    }
+                ],
+                "max_temperature_c": 47.125
+            },
+            {
+                "phase": "measurement",
+                "run_index": 300,
+                "timestamp_utc": "2026-05-03T23:42:23.026281+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.031
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.343
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.343
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.843
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.187
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.343
+                    }
+                ],
+                "max_temperature_c": 47.343
+            },
+            {
+                "phase": "measurement",
+                "run_index": 350,
+                "timestamp_utc": "2026-05-03T23:42:23.477579+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.312
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.468
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.562
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.906
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.156
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.187
+                    }
+                ],
+                "max_temperature_c": 47.468
+            },
+            {
+                "phase": "measurement",
+                "run_index": 400,
+                "timestamp_utc": "2026-05-03T23:42:23.928278+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.187
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.312
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.531
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 43.937
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.25
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.312
+                    }
+                ],
+                "max_temperature_c": 47.312
+            },
+            {
+                "phase": "measurement",
+                "run_index": 450,
+                "timestamp_utc": "2026-05-03T23:42:24.379051+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.25
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.312
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.593
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 44.0
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.281
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.312
+                    }
+                ],
+                "max_temperature_c": 47.312
+            },
+            {
+                "phase": "measurement",
+                "run_index": 500,
+                "timestamp_utc": "2026-05-03T23:42:24.829873+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.437
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.187
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.562
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 44.0
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.281
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.187
+                    }
+                ],
+                "max_temperature_c": 47.187
+            },
+            {
+                "phase": "after_measurement",
+                "run_index": 500,
+                "timestamp_utc": "2026-05-03T23:42:24.833214+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 46.437
+                    },
+                    {
+                        "zone": "thermal_zone1",
+                        "type": "gpu-thermal",
+                        "temperature_c": 47.187
+                    },
+                    {
+                        "zone": "thermal_zone5",
+                        "type": "soc0-thermal",
+                        "temperature_c": 44.593
+                    },
+                    {
+                        "zone": "thermal_zone6",
+                        "type": "soc1-thermal",
+                        "temperature_c": 44.125
+                    },
+                    {
+                        "zone": "thermal_zone7",
+                        "type": "soc2-thermal",
+                        "temperature_c": 44.218
+                    },
+                    {
+                        "zone": "thermal_zone8",
+                        "type": "tj-thermal",
+                        "temperature_c": 47.375
+                    }
+                ],
+                "max_temperature_c": 47.375
+            }
+        ]
+    },
+    "system": {
+        "platform": "Linux-5.15.148-tegra-aarch64-with-glibc2.35",
+        "machine": "aarch64",
+        "processor": "aarch64",
+        "python_version": "3.10.12"
+    }
+}

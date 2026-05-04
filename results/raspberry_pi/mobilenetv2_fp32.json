@@ -1,0 +1,411 @@
+{
+    "model": "models/mobilenetv2_fp32.tflite",
+    "runs": 500,
+    "warmup_runs": 50,
+    "num_threads": 4,
+    "temp_sample_interval": 50,
+    "timestamp_utc": "2026-05-04T00:09:37.283924+00:00",
+    "input_shape": [
+        1,
+        224,
+        224,
+        3
+    ],
+    "input_dtype": "<class 'numpy.float32'>",
+    "output_shape": [
+        1,
+        1000
+    ],
+    "output_dtype": "float32",
+    "latency_ms": {
+        "mean": 43.27072824404968,
+        "median": 43.23217450019001,
+        "min": 42.00899300121819,
+        "max": 47.77512299915543,
+        "p90": 43.62233299980289,
+        "p95": 43.731164001656,
+        "p99": 44.42159599966544
+    },
+    "throughput_fps": 23.110311302364405,
+    "thermal": {
+        "summary": {
+            "available": true,
+            "start_temperature_c": 51.121,
+            "end_temperature_c": 62.809,
+            "max_temperature_c": 62.809,
+            "delta_temperature_c": 11.687999999999995
+        },
+        "trace": [
+            {
+                "phase": "before_model_load",
+                "run_index": null,
+                "timestamp_utc": "2026-05-04T00:09:37.284850+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 51.121
+                    }
+                ],
+                "max_temperature_c": 51.121,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "before_warmup",
+                "run_index": null,
+                "timestamp_utc": "2026-05-04T00:09:37.345487+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 51.121
+                    }
+                ],
+                "max_temperature_c": 51.121,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "after_warmup",
+                "run_index": null,
+                "timestamp_utc": "2026-05-04T00:09:39.532016+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 55.017
+                    }
+                ],
+                "max_temperature_c": 55.017,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 50,
+                "timestamp_utc": "2026-05-04T00:09:41.710422+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 56.965
+                    }
+                ],
+                "max_temperature_c": 56.965,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 100,
+                "timestamp_utc": "2026-05-04T00:09:43.893421+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 56.965
+                    }
+                ],
+                "max_temperature_c": 56.965,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 150,
+                "timestamp_utc": "2026-05-04T00:09:46.073385+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 59.887
+                    }
+                ],
+                "max_temperature_c": 59.887,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 200,
+                "timestamp_utc": "2026-05-04T00:09:48.251927+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 59.887
+                    }
+                ],
+                "max_temperature_c": 59.887,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 250,
+                "timestamp_utc": "2026-05-04T00:09:50.436597+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 59.4
+                    }
+                ],
+                "max_temperature_c": 59.4,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 300,
+                "timestamp_utc": "2026-05-04T00:09:52.616001+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 60.374
+                    }
+                ],
+                "max_temperature_c": 60.374,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 350,
+                "timestamp_utc": "2026-05-04T00:09:54.788210+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 61.835
+                    }
+                ],
+                "max_temperature_c": 61.835,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 400,
+                "timestamp_utc": "2026-05-04T00:09:56.966880+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 61.348
+                    }
+                ],
+                "max_temperature_c": 61.348,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 450,
+                "timestamp_utc": "2026-05-04T00:09:59.154921+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 61.348
+                    }
+                ],
+                "max_temperature_c": 61.348,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "measurement",
+                "run_index": 500,
+                "timestamp_utc": "2026-05-04T00:10:01.332521+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 60.861
+                    }
+                ],
+                "max_temperature_c": 60.861,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            },
+            {
+                "phase": "after_measurement",
+                "run_index": 500,
+                "timestamp_utc": "2026-05-04T00:10:01.335310+00:00",
+                "source": "linux_thermal_zones",
+                "linux_thermal_zones": [
+                    {
+                        "zone": "thermal_zone0",
+                        "type": "cpu-thermal",
+                        "temperature_c": 62.809
+                    }
+                ],
+                "max_temperature_c": 62.809,
+                "raspberry_pi_throttling": {
+                    "raw": "throttled=0x0",
+                    "value_hex": "0x0",
+                    "currently_under_voltage": false,
+                    "currently_frequency_capped": false,
+                    "currently_throttled": false,
+                    "soft_temperature_limit_active": false,
+                    "under_voltage_occurred": false,
+                    "frequency_capping_occurred": false,
+                    "throttling_occurred": false,
+                    "soft_temperature_limit_occurred": false
+                }
+            }
+        ]
+    },
+    "system": {
+        "platform": "Linux-6.12.47+rpt-rpi-v8-aarch64-with-glibc2.36",
+        "machine": "aarch64",
+        "processor": "",
+        "python_version": "3.11.2"
+    }
+}
